@@ -107,7 +107,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <?php
                             foreach ($ViewProductos as $row){
 							
-                                echo '<a href="#" title="img1"><p class="center-text">'.substr($row['nombre'],0,20).'</p><img src="http://localhost/San_Jorge/uploads/'.$row['img'].'" alt="" /></a>';
+                                echo '<a href="#" title="img1"><p class="center-text">'.substr($row['nombre'],0,20).'</p><img src="http://localhost/San_Jorge/uploads/'.$row['img'].'" alt="" /><br><p>'.$row['precio'].'</p></a>';
                             }
                             ?>
                         </div>
