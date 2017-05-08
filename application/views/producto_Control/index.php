@@ -106,7 +106,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="ocarousel_window">
                             <?php
                             foreach ($ViewProductos as $row){
-                                echo ' <a href="#" title="img1"> <img src="http://localhost/San_Jorge/uploads/'.$row['img'].'" alt="" /></a>';
+							
+                                echo '<a href="#" title="img1"><p class="center-text">'.substr($row['nombre'],0,20).'</p><img src="http://localhost/San_Jorge/uploads/'.$row['img'].'" alt="" /></a>';
                             }
                             ?>
                         </div>
@@ -151,7 +152,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <a href="'.$link.'"><img src="http://localhost/San_Jorge/uploads/'.$row['img'].'" alt="" /></a>
                             <div class="price-details">
                                 <div class="price-number">
-                                 <h4><a href="'.$link.'">'.$row['nombre'].'</a></h4>
+                                 <h4><a href="'.$link.'">'.substr($row['nombre'],0,53).'</a></h4>
                                     <span class="rupees"><h6> $'.$row['precio'].'</h6></span>
                                 </div>
                                 <div class="add-cart">
