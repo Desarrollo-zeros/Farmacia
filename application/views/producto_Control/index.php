@@ -126,8 +126,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <ul>
                             <?php
                             foreach ($ViewMenu as $row){
-                                $link = base_url('producto_Control?productos='.$row['categoria']);
-                                echo ' <li><a href="'.uri_string($link).'">'.$row['menu'].'</a></li>';
+                                $link = base_url('').'/producto_Control?productos='.$row['categoria'];
+                                echo ' <li><a href="'.$link.'">'.$row['menu'].'</a></li>';
                             }
 
                             ?>
