@@ -116,7 +116,7 @@ class account extends CI_Controller
             $insert = $this->registrar_->insert($userData);
             if($insert){
                 $this->session->set_userdata('success_msg', 'Your registration was successfully. Please login to your account.');
-                echo '<div class="success"></div><meta http-equiv="refresh" content="0; url=http://localhost/San_Jorge/" />';
+                echo '<div class="success"></div><meta http-equiv="refresh" content="0; url="'.base_url("").'" />';
             }
             else{
                 echo '<div class="success">No se pudo registrar usuario contacte con un administrador</div>';
@@ -140,7 +140,7 @@ class account extends CI_Controller
         $pass =  md5($this->input->post('password'));
         $checkLogin = $this->registrar_->chekExist($email,$pass);
         if($checkLogin){
-            echo '<div class="success"></div><meta http-equiv="refresh" content="0; url=http://localhost/San_Jorge/" />';
+            echo '<div class="success"></div><meta http-equiv="refresh" content="0; url="'.base_url("").'" />';
         }
         else{
             echo '<div class="success">Usuario o Contraseña invalido</div>';

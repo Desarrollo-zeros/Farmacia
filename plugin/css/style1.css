@@ -618,9 +618,10 @@ img{max-width:100%;}
 	border-left:1px solid #D6D6D6;
 }
 .images_3_of_2  img {
-	max-width: 100%;
+	width: 350px;
+	max-width: 500px;
 	display:block;
-	border: 1px solid #DFDFDF;
+	border: 5px solid #DFDFDF;
 }
 .span_3_of_2  h2 {
 	font-size: 1.2em;

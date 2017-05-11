@@ -6,13 +6,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://localhost/San_Jorge/plugin/css/nav.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="http://localhost/San_Jorge/plugin/css/style.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="http://localhost/San_Jorge/plugin/css/Colores.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?php echo base_url("");?>plugin/css/nav.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?php echo base_url("");?>plugin/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?php echo base_url("");?>plugin/css/Colores.css" rel="stylesheet" type="text/css" media="all" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="http://localhost/San_Jorge/plugin/js/registrarUser.js"></script>
+        <script src="<?php echo base_url("");?>plugin/js/registrarUser.js"></script>
         <title>Drogueria San Jorge #1</title>
 
 <?php

@@ -21,7 +21,7 @@
     $(document).ready(function(){
         $('form.jsform').on('submit', function(form){
             form.preventDefault();
-            $.post('http://localhost/San_Jorge/account/a', $('form.jsform').serialize(), function(data){
+            $.post('<?php base_url("")?>account/a', $('form.jsform').serialize(), function(data){
                 $('div.jsError').html(data);
             });
         });

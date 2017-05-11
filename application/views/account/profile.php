@@ -9,26 +9,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="http://localhost/San_Jorge/plugin/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://localhost/San_Jorge/plugin/css/profile.css">
+    <link rel="stylesheet" href="<?php echo base_url("");?>plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url("");?>plugin/css/profile.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="http://localhost/San_Jorge/plugin/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="<?php echo base_url("");?>plugin/dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
     folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="http://localhost/San_Jorge/plugin/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="<?php echo base_url("");?>plugin/dist/css/skins/_all-skins.min.css">
     <!-- SweetAlert  style -->
-    <link rel="stylesheet" href="http://localhost/San_Jorge/plugin/plugins/sweetalert/sweetalert.css">
+    <link rel="stylesheet" href="<?php echo base_url("");?>plugin/plugins/sweetalert/sweetalert.css">
     <!-- responsive datatables -->
-    <link rel="stylesheet" href="http://localhost/San_Jorge/plugin/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url("");?>plugin/plugins/datatables/extensions/Responsive/css/dataTables.responsive.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script  src="http://localhost/San_Jorge/js/profile.js"></script>
+    <script  src="<?php echo base_url("");?>js/profile.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <title>Drogueria San Jorge N°1</title>
@@ -39,7 +39,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="http://localhost/San_Jorge/plugin/account/profile" class="logo">
+        <a href="<?php echo base_url("");?>plugin/account/profile" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>D</b>Rogueria</span>
             <!-- logo for regular state and mobile devices -->
@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li><!-- start message -->
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="http://localhost/San_Jorge/plugin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                                                <img src="<?php echo base_url("");?>plugin/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 Support Team
@@ -154,7 +154,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!-- Menu Footer-->
                             <li class="user-footer">
                                 <div class="pull-left">
-                                    <a href="<?php base_url("")?>" class="btn btn-default btn-flat">Inicio</a>
+                                    <a href="<?php echo base_url("");?>" class="btn btn-default btn-flat">Inicio</a>
                                 </div>
                                 <div class="pull-right">
                                     <a href="<?php ?>" class="btn btn-default btn-flat">Salir</a>
@@ -205,7 +205,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <i class="fa fa-dashboard"></i> <span>Sistema</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="<?php base_url("")?>"><i class="fa fa-circle-o"></i>Inicio</a></li>
+                        <li><a href="<?php echo base_url("");?>"><i class="fa fa-circle-o"></i>Inicio</a></li>
                         <li><a href="<?php base_url("account/logout")?>"><i class="fa fa-circle-o"></i>Salir</a></li>
                     </ul>
                 </li>
@@ -529,25 +529,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </div><!-- ./wrapper -->
 <!-- jQuery 2.1.4 -->
-<script src="http://localhost/San_Jorge/plugin/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="<?php echo base_url("plugin/plugins/jQuery/jQuery-2.1.4.min.js");?>"></script>
 <!-- Bootstrap 3.3.5 -->
-<script src="http://localhost/San_Jorge/plugin/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url("plugin/bootstrap/js/bootstrap.min.js");?>"></script>
 <!-- SlimScroll -->
-<script src="http://localhost/San_Jorge/plugin/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="<?php echo base_url("plugin/plugins/slimScroll/jquery.slimscroll.min.js");?>"></script>
 <!-- FastClick -->
-<script src="http://localhost/San_Jorge/plugin/plugins/fastclick/fastclick.min.js"></script>
+<script src="<?php echo base_url("plugin/plugins/fastclick/fastclick.min.js");?>"></script>
 <!-- AdminLTE App -->
-<script src="http://localhost/San_Jorge/plugin/dist/js/app.min.js"></script>
+<script src="<?php echo base_url("plugin/dist/js/app.min.js");?>"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="http://localhost/San_Jorge/plugin/dist/js/demo.js"></script>
+<script src="<?php echo base_url("plugin/dist/js/demo.js");?>"></script>
 
 <!-- SweetAlert -->
-<script src="http://localhost/San_Jorge/plugin/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="<?php echo base_url("plugin/plugins/sweetalert/sweetalert.min.js");?>"></script>
 <!-- Bootstrap-notify -->
-<script src="http://localhost/San_Jorge/plugin/plugins/bootstrap-notify/bootstrap-notify.min.js"></script>
-<script src="http://localhost/San_Jorge/plugin/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="http://localhost/San_Jorge/plugin/plugins/datatables/dataTables.bootstrap.min.js"></script>
-<script src="http://localhost/San_Jorge/plugin/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
-<script src="http://localhost/San_Jorge/plugin/js/customer.js"></script>
+<script src="<?php echo base_url("plugin/plugins/bootstrap-notify/bootstrap-notify.min.js");?>"></script>
+<script src="<?php echo base_url("plugin/plugins/datatables/jquery.dataTables.min.js");?>"></script>
+<script src="<?php echo base_url("plugin/plugins/datatables/dataTables.bootstrap.min.js");?>"></script>
+<script src="<?php echo base_url("plugin/plugins/datatables/extensions/Responsive/js/dataTables.responsive.min.js");?>"></script>
+<script src="<?php echo base_url("plugin/js/customer.js");?>"></script>
 </body>
 </html>

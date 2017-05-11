@@ -98,7 +98,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </nav>
 <br>
-<img src="http://localhost/San_Jorge/plugin/img/domicilios.jgp" class="center-block img">
+<img src="<?php base_url("")?>plugin/img/domicilios.jgp" class="center-block img">
 <br>
 <br>
 <br>
@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container">
         <div class="agile-copy">
             <p>© 2017 Carlos Andres Castilla Garcia | Design by <a href="https://www.facebook.com/carlos.castilla.79">Dev-Zeros</a></p>
-            <img src="http://localhost/San_Jorge/plugin/img/0001.jpg" class="center-block img-responsive" style="width: 50%">
+            <img src="<?php base_url("")?>plugin/img/0001.jpg" class="center-block img-responsive" style="width: 50%">
         </div>
         <div class="agileits-social">
             <ul>

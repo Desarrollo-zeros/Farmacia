@@ -6,19 +6,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://localhost/San_Jorge/plugin/css/nav.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="http://localhost/San_Jorge/plugin/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="http://localhost/San_Jorge/plugin/css/Colores.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="http://localhost/San_Jorge/plugin/bootstrap/css/bootstrap.min.css">
+    <link href="<?php echo base_url("");?>plugin/css/nav.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo base_url("");?>plugin/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo base_url("");?>plugin/css/Colores.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo base_url("");?>plugin/bootstrap/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://localhost/San_Jorge/plugin/js/registrar.js"></script>
+    <script src="<?php echo base_url("");?>plugin/js/registrar.js"></script>
     <script src="http://jquerymodal.com/jquery.modal.js"></script>
-    <script src="http://localhost/San_Jorge/plugin/js/jquery.openCarousel.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://localhost/San_Jorge/plugin/js/easing.js"></script>
-    <script type="text/javascript" src="http://localhost/San_Jorge/plugin/js/move-top.js"></script>
+    <script src="<?php echo base_url("");?>plugin/js/jquery.openCarousel.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url("");?>plugin/js/easing.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("");?>plugin/js/move-top.js"></script>
     <title>Drogueria San Jorge #1</title>
-    <link href="http://localhost/San_Jorge/plugin/css/style1.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="<?php echo base_url("");?>plugin/css/style1.css" rel="stylesheet" type="text/css" media="all"/>
     <script>
         $(document).ready(function(){
             $("#search").keyup(function(){
@@ -104,7 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 </nav>
 <p id="txtHint" style="padding-top:50px; text-align:center;"></p>
-<img src="http://localhost/San_Jorge/plugin/img/domicilios.jgp" class="center-block" style="width: 400px; height: 300px;">
+<img src="<?php echo base_url("");?>plugin/img/domicilios.jgp" class="center-block" style="width: 400px; height: 300px;">
 
 <div class="main">
     <div class="content">
@@ -120,7 +120,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <?php
 
                             foreach ($ViewProductos as $row){
-                                echo '<a href="#" title="img1"><p class="center-text">'.substr($row['nombre'],0,20).'</p><img src="http://localhost/San_Jorge/uploads/'.$row['img'].'" alt="" /><br><p>'.$row['precio'].'</p></a>';
+                                echo '<a href="#" title="img1"><p class="center-text">'.substr($row['nombre'],0,20).'</p><img src="'.base_url("").'uploads/'.$row['img'].'" alt="" /><br><p>'.$row['precio'].'</p></a>';
                             }
                             ?>
                         </div>
@@ -185,7 +185,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container">
         <div class="agile-copy">
             <p>© 2017 Carlos Andres Castilla Garcia | Design by <a href="https://www.facebook.com/carlos.castilla.79">Dev-Zeros</a></p>
-            <img src="http://localhost/San_Jorge/plugin/img/0001.jpg" class="center-block img-responsive" style="width: 50%">
+            <img src="<?php echo base_url("");?>plugin/img/0001.jpg" class="center-block img-responsive" style="width: 50%">
         </div>
         <div class="agileits-social">
             <ul>

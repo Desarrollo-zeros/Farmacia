@@ -5,20 +5,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="http://localhost/San_Jorge/plugin/css/nav.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="http://localhost/San_Jorge/plugin/css/registrar.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="http://localhost/San_Jorge/plugin/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?php echo base_url("");?>plugin/css/registrar.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="<?php echo base_url("");?>plugin/css/style.css" rel="stylesheet" type="text/css" media="all" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="http://localhost/San_Jorge/plugin/js/registrar.js"></script>
+        <script src="<?php echo base_url("");?>plugin/js/registrar.js"></script>
         <title>Drogueria San Jorge #1</title>
         <link href="maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <script>
             $(document).ready(function(){
                 $('form.jsform').on('submit', function(form){
                     form.preventDefault();
-                    $.post('http://localhost/San_Jorge/account/registrarajax', $('form.jsform').serialize(), function(data){
+                    $.post('<?php echo base_url("");?>account/registrarajax', $('form.jsform').serialize(), function(data){
                         $('div.jsError').html(data);
                     });
                 });
@@ -31,7 +30,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-7">
-            <div class="jsError alert alert-danger"><img src="http://localhost/San_Jorge/plugin/img/default.svg" class="center-block" style=" width: 30px; height: 30px"></div>
+            <div class="jsError alert alert-danger"><img src="<?php echo base_url("");?>plugin/img/default.svg" class="center-block" style=" width: 30px; height: 30px"></div>
             <form action="" method="post" id="fileForm" class="jsform" role="form">
                 <fieldset><legend class="text-center">Se requiere información válida para registrarse. <span class="req"><small>se requiere*</small></span></legend>
                     <div class="form-group">
@@ -91,7 +90,7 @@
             <br>
             <a href="login" class="btn btn-lg btn-primary btn-block center-block" type="submit">Login</a>
             <br>
-            <img src="http://localhost/San_Jorge/plugin/img/domicilios.jgp" class="center-block img">
+            <img src="<?php echo base_url("");?>plugin/img/domicilios.jgp" class="center-block img img-responsive">
             <br>
             </div>
     </div>
@@ -101,7 +100,7 @@
     <div class="container">
         <div class="agile-copy">
             <p>© 2017 Carlos Andres Castilla Garcia | Design by <a href="https://www.facebook.com/carlos.castilla.79">Dev-Zeros</a></p>
-            <img src="http://localhost/San_Jorge/plugin/img/0001.jpg" class="center-block img-responsive" style="width: 50%">
+            <img src="<?php echo base_url("");?>plugin/img/0001.jpg" class="center-block img-responsive" style="width: 50%">
         </div>
         <div class="agileits-social">
             <ul>

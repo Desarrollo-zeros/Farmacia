@@ -1,6 +1,6 @@
 var save_method; //for save method string
 var table;
-
+var base_url = window.location.origin+"/San_Jorge/";
 $(document).ready(function() {
 
     //datatables
@@ -15,7 +15,7 @@ $(document).ready(function() {
 
         // Load data for the table's content from an Ajax source
         "ajax": {
-            "url": "http://localhost/San_Jorge/producto_Control/ajax_list",
+            'url': base_url+'producto_Control/ajax_list',
             "type": "POST"
         },
 
@@ -25,7 +25,7 @@ $(document).ready(function() {
                 "targets": [-1], //last column
                 "orderable": false, //set not orderable
                 "render": function ( data, type, row ) {
-                    return '<img  class="center-block img-responsive img-circle" width="80px" src="http://localhost/San_Jorge/uploads/'+data+'"/>';
+                    return '<img  class="center-block img-responsive img-circle" width="80px" src="'+base_url+'uploads/'+data+'"/>';
                 },
                 "targets": 2 // column index
             },
@@ -58,10 +58,10 @@ $(document).ready(function(){
         form.preventDefault();
         var url;
         if($('#id').val().length>0){
-            url = "http://localhost/San_Jorge/producto_Control/ajax_update";
+            url = ''+base_url+'producto_Control/ajax_update';
         }
         else{
-            url = "http://localhost/San_Jorge/producto_Control/ajax_add";
+            url = ''+base_url+'producto_Control/ajax_add';
         }
         var file2 = $('#imgSalida').val();
         var nombre = $("#nombre").val();
@@ -118,7 +118,7 @@ $(document).ready(function(){
                                     swal({
                                         title: "Error!",
                                         text: "Error no se ha podido guardar los datos.",
-                                        imageUrl: "http://localhost/San_Jorge/plugin/img/bad.jpg"
+                                        imageUrl: ''+base_url+'plugin/img/bad.jpg'
                                     });
                                 }
                                 $('#btnSave').text('save'); //change button text
@@ -149,7 +149,7 @@ function edit_person(id)
     $('.help-block').empty(); // clear error string
 
     $.ajax({
-        url : "http://localhost/San_Jorge/producto_Control/ajax_edit/" + id,
+        url : ''+base_url+'producto_Control/ajax_edit/' + id,
         type: "GET",
         dataType: "JSON",
         success: function(data)
@@ -159,7 +159,7 @@ function edit_person(id)
             $('[name="nombre"]').val(data.nombre);
             $('[name="precio"]').val(data.precio);
            // $('[name="file"]').val(data.img);
-            $('#imgSalida').attr("src","http://localhost/San_Jorge/uploads/"+data.img);
+            $('#imgSalida').attr("src",''+base_url+'uploads/'+data.img);
             $('[name="detalle"]').val(data.text);
             $('[name="categoria"]').val(data.categoria);
             $('#modal_form').modal('show'); // show bootstrap modal when complete loaded
@@ -178,7 +178,7 @@ function delete_person(id)
     {
         // ajax delete data to database
         $.ajax({
-            url : "http://localhost/San_Jorge/producto_Control/ajax_delete/"+id,
+            url : ''+base_url+'producto_Control/ajax_delete/'+id,
             type: "POST",
             dataType: "JSON",
             success: function(data)

@@ -17,6 +17,11 @@ class producto_Control extends CI_Controller
         $data['ViewMenu'] = $this->producto->ViewMenu();
         $this->load->view('producto_Control/index',$data);
     }
+	   public function preview(){
+           $data['ViewProductos'] = $this->producto->ViewProductos();
+           $data['ViewMenu'] = $this->producto->ViewMenu();
+        $this->load->view('producto_Control/preview',$data);
+    }
 
     public function ajax_list()
     {

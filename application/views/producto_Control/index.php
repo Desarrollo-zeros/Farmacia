@@ -8,20 +8,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="http://localhost/San_Jorge/plugin/css/nav.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="http://localhost/San_Jorge/plugin/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="http://localhost/San_Jorge/plugin/css/Colores.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="stylesheet" href="http://localhost/San_Jorge/plugin/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://localhost/San_Jorge/plugin/css/profile.css">
+    <link href="<?php echo base_url("");?>plugin/css/nav.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo base_url("");?>plugin/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="<?php echo base_url("");?>plugin/css/Colores.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="<?php echo base_url("");?>plugin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo base_url("");?>plugin/css/profile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="http://localhost/San_Jorge/plugin/js/registrar.js"></script>
+    <script src="<?php echo base_url("");?>plugin/js/registrar.js"></script>
     <script src="http://jquerymodal.com/jquery.modal.js"></script>
-    <script src="http://localhost/San_Jorge/plugin/js/jquery.openCarousel.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://localhost/San_Jorge/plugin/js/easing.js"></script>
-    <script type="text/javascript" src="http://localhost/San_Jorge/plugin/js/move-top.js"></script>
+    <script src="<?php echo base_url("");?>plugin/js/jquery.openCarousel.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url("");?>plugin/js/easing.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("");?>plugin/js/move-top.js"></script>
     <title>Drogueria San Jorge #1</title>
-    <link href="http://localhost/San_Jorge/plugin/css/style1.css" rel="stylesheet" type="text/css" media="all"/>
-    <title>Drogueria San Jorge #1</title>
+    <link href="<?php echo base_url("");?>plugin/css/style1.css" rel="stylesheet" type="text/css" media="all"/>
 </head>
 <body>
 <br>
@@ -107,7 +106,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <?php
                             foreach ($ViewProductos as $row){
 							
-                                echo '<a href="#" title="img1"><p class="center-text">'.substr($row['nombre'],0,20).'</p><img src="http://localhost/San_Jorge/uploads/'.$row['img'].'" alt="" /><br><p>'.$row['precio'].'</p></a>';
+                                echo '<a href="#" title="img1"><p class="center-text">'.substr($row['nombre'],0,20).'</p><img src="'.base_url("").'uploads/'.$row['img'].'" alt="" /><br><p>'.$row['precio'].'</p></a>';
                             }
                             ?>
                         </div>
@@ -149,7 +148,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 if($row['categoria']==$_GET['productos']){
                                     $link = base_url().'account/login?id='.$row['id'];
                                     echo '<div class="grid_1_of_4 images_1_of_4">
-                            <a href="'.$link.'"><img src="http://localhost/San_Jorge/uploads/'.$row['img'].'" alt="" /></a>
+                            <a href="'.$link.'"><img src="'.base_url("").'uploads/'.$row['img'].'" alt="" /></a>
                             <div class="price-details">
                                 <div class="price-number">
                                  <h4><a href="'.$link.'">'.substr($row['nombre'],0,53).'</a></h4>
@@ -174,7 +173,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <p>Si Tienes Duda No Olvides Comunicarte con los administradores</p>
                                     <br>
                                     <br>
-                                    <img src="http://localhost/San_Jorge/plugin/img/0001.jpg" class="center-block img-responsive" style="width: 50%">
+                                    <img src="<?php base_url("")?>plugin/img/0001.jpg" class="center-block img-responsive" style="width: 50%">
 
                                 </div>
                             </li>
@@ -199,6 +198,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     });
 </script>
 <a href="#" id="toTop"> </a>
-<script type="text/javascript" src="http://localhost/themes/web/js/navigation.js"></script>
 </body>
 </html>
